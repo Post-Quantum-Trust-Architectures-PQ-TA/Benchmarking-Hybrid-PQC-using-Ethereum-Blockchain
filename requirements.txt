@@ -1,0 +1,24 @@
+# Core Ethereum and Blockchain
+web3>=6.0.0
+py-solc-x>=1.1.0
+
+# Post-Quantum Cryptography
+quantcrypt>=0.1.0
+
+# Classical Cryptography (for ECDSA baseline)
+cryptography>=41.0.0
+
+# Testing
+pytest>=7.0.0
+
+# Visualization and Analysis
+matplotlib>=3.7.0
+numpy>=1.24.0
+
+# Progress Bars and Utilities
+tqdm>=4.65.0
+
+# Optional but Recommended
+# ecdsa>=0.18.0  # Alternative ECDSA library (if cryptography not available)
+# psutil>=5.9.0  # For advanced metrics (memory, CPU tracking)
+

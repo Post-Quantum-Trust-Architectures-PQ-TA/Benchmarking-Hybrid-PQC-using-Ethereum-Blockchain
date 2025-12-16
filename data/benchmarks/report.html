@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PQC Signature Algorithm Benchmark Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; margin-top: 30px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .summary { background-color: #ecf0f1; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Post-Quantum Cryptography Signature Algorithm Benchmark Report</h1>
+    <div class="summary">
+        <p><strong>Report Date:</strong> 2025-12-15T22:42:19.534977</p>
+        <p><strong>Algorithms Tested:</strong> 8</p>
+        <p><strong>Iterations per Operation:</strong> 30</p>
+    </div>
+    
+    <h2>Performance Summary</h2>
+    <table>
+        <tr>
+            <th>Algorithm</th>
+            <th>Keygen (ms)</th>
+            <th>Sign (ms)</th>
+            <th>Verify (ms)</th>
+            <th>PubKey (B)</th>
+            <th>Sig (B)</th>
+        </tr>
+
+        <tr>
+            <td>ecdsa</td>
+            <td>3.70</td>
+            <td>1.43</td>
+            <td>1.14</td>
+            <td>65</td>
+            <td>72</td>
+        </tr>
+
+        <tr>
+            <td>dilithium2</td>
+            <td>14.19</td>
+            <td>6.66</td>
+            <td>4.65</td>
+            <td>1312</td>
+            <td>2420</td>
+        </tr>
+
+        <tr>
+            <td>dilithium3</td>
+            <td>11.34</td>
+            <td>7.20</td>
+            <td>3.76</td>
+            <td>1952</td>
+            <td>3309</td>
+        </tr>
+
+        <tr>
+            <td>dilithium5</td>
+            <td>11.51</td>
+            <td>7.55</td>
+            <td>3.91</td>
+            <td>2592</td>
+            <td>4627</td>
+        </tr>
+
+        <tr>
+            <td>sphincs128f</td>
+            <td>231.95</td>
+            <td>2603.22</td>
+            <td>7.98</td>
+            <td>64</td>
+            <td>29792</td>
+        </tr>
+
+        <tr>
+            <td>sphincs_fast</td>
+            <td>28.25</td>
+            <td>279.00</td>
+            <td>12.26</td>
+            <td>64</td>
+            <td>49856</td>
+        </tr>
+
+        <tr>
+            <td>falcon512</td>
+            <td>46.87</td>
+            <td>9.39</td>
+            <td>3.98</td>
+            <td>897</td>
+            <td>656</td>
+        </tr>
+
+        <tr>
+            <td>falcon1024</td>
+            <td>102.51</td>
+            <td>9.53</td>
+            <td>4.03</td>
+            <td>1793</td>
+            <td>1273</td>
+        </tr>
+
+    </table>
+    
+    <h2>Statistical Analysis</h2>
+    <p>Detailed statistics available in JSON benchmark file.</p>
+    
+    <h2>Recommendations</h2>
+    <ul>
+        <li>For high-speed applications: Consider fastest algorithms</li>
+        <li>For storage-constrained: Consider smallest key/signature sizes</li>
+        <li>For blockchain: Consider gas-efficient options</li>
+        <li>For security: Use NIST Level 3+ algorithms</li>
+    </ul>
+    
+</body>
+</html>

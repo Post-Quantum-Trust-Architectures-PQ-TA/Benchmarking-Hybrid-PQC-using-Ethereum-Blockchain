@@ -1,0 +1,19 @@
+\begin{table}[h]
+\centering
+\caption{Performance Comparison of PQC Signature Algorithms}
+\label{tab:pqc_comparison}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Algorithm & Keygen (ms) & Sign (ms) & Verify (ms) & PubKey (B) & Sig (B) & Gas (K) \\
+\hline
+ecdsa & 3.70 & 1.43 & 1.14 & 65 & 72 & N/A \\
+dilithium2 & 14.19 & 6.66 & 4.65 & 1312 & 2420 & 94.4 \\
+dilithium3 & 11.34 & 7.20 & 3.76 & 1952 & 3309 & 118.2 \\
+dilithium5 & 11.51 & 7.55 & 3.91 & 2592 & 4627 & 153.2 \\
+sphincs128f & 231.95 & 2603.22 & 7.98 & 64 & 29792 & 828.9 \\
+sphincs\_fast & 28.25 & 279.00 & 12.26 & 64 & 49856 & 1374.8 \\
+falcon512 & 46.87 & 9.39 & 3.98 & 897 & 656 & 47.7 \\
+falcon1024 & 102.51 & 9.53 & 4.03 & 1793 & 1273 & 64.1 \\
+\hline
+\end{tabular}
+\end{table}
