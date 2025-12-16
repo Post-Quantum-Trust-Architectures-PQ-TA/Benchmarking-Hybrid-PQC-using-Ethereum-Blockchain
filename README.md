@@ -1,0 +1,2 @@
+# Hybrid Post-Quantum Cryptography and Ethereum Signatures: A Comprehensive Performance Benchmarking Study
+Benchmarking framework for Post-Quantum Cryptography algorithms in Ethereum. Tests 7 NIST-standardized PQC schemes (Dilithium2/3/5, SPHINCS+, FALCON-512/1024) against ECDSA baseline, measuring performance, gas costs, and batch scalability. Includes visualization tools and research paper outputs.
